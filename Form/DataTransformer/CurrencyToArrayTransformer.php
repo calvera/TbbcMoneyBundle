@@ -25,7 +25,7 @@ class CurrencyToArrayTransformer implements DataTransformerInterface
             throw new UnexpectedTypeException($value, 'Currency');
         }
 
-        return array("tbbc_name" => $value->getName());
+        return array("tbbc_name" => $value->getCode());
     }
 
     /**
